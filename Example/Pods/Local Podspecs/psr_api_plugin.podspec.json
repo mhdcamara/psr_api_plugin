@@ -1,8 +1,9 @@
 {
   "name": "psr_api_plugin",
-  "version": "0.1.0",
-  "summary": "A short description of psr_api_plugin.",
-  "description": "TODO: Add long description of the pod here.",
+  "swift_versions": "5.2.4",
+  "version": "1.0.0",
+  "summary": "psr_api_plugin is a cocoapods that extends the UIImageView class",
+  "description": "\"SKImageExtension is a cocoapods that extends the UIImageView class with a convinence method for circling an image view with specified border color and width\"",
   "homepage": "https://github.com/mhdcamara/psr_api_plugin",
   "license": {
     "type": "MIT",
@@ -13,10 +14,12 @@
   },
   "source": {
     "git": "https://github.com/mhdcamara/psr_api_plugin.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "psr_api_plugin/Classes/**/*"
+  "source_files": "psr_api_plugin/Classes/**/*",
+  "frameworks": "UIKit",
+  "swift_version": "5.2.4"
 }

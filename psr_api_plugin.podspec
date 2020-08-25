@@ -24,13 +24,13 @@ Pod::Spec.new do |s|
                          DESC
 
   s.homepage         = 'https://github.com/mhdcamara/psr_api_plugin'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mhdcamara' => 'camara.mouhamed@paydunya.com' }
   s.source           = { :git => 'https://github.com/mhdcamara/psr_api_plugin.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'psr_api_plugin/Classes/**/*'
   
@@ -40,5 +40,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'Alamofire', '~> 4.8.2'
 end

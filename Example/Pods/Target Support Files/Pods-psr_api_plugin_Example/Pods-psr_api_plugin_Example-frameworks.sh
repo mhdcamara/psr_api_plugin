@@ -197,9 +197,25 @@ if [ -r "${ARTIFACT_LIST_FILE}" ]; then
 fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/EasyTipView/EasyTipView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/EzPopup/EzPopup.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SKCountryPicker/SKCountryPicker.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/psr_api_plugin/psr_api_plugin.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/EasyTipView/EasyTipView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/EzPopup/EzPopup.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SKCountryPicker/SKCountryPicker.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/psr_api_plugin/psr_api_plugin.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
