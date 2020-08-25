@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'psr_api_plugin'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
 
   s.summary          = 'psr_api_plugin is a cocoapods that extends the UIImageView class'
 
