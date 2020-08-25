@@ -48,11 +48,11 @@ class TableOfContentsSpec: QuickSpec {
         }
     }
     
-    func test_circleImage() {
-        // This is an example of a functional test case.
-      let testImage = UIImageView()
-        testImage.circleImageView(borderColor: UIColor.black, borderWidth: 3.0)
-        
-        XCTAssert(testImage.layer.borderWidth == 3.0)
-    }
+//    func test_circleImage() {
+//        // This is an example of a functional test case.
+//      let testImage = UIImageView()
+//        testImage.circleImageView(borderColor: UIColor.black, borderWidth: 3.0)
+//        
+//        XCTAssert(testImage.layer.borderWidth == 3.0)
+//    }
 }

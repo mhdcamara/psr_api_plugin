@@ -102,6 +102,7 @@
 		CA9A2D74A41B640925B521CEC8BBEACE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
 		CCA41EC992E6CFEC5367FE79E843240D /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD39B35C6EA5095805404AA3E1B7799 /* AllPass.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		CD4CF92824F53048007032ED /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4CF92724F53048007032ED /* UIImageExtension.swift */; };
+		CD85A98724F543630035F086 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4CF92724F53048007032ED /* UIImageExtension.swift */; };
 		CEB0B57C65304E1E2A8C70B2A3FC7A6B /* Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0094A06AD6DA53D8221A6A3894EBE456 /* Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D01B8CB271F18C9B70586679F0C2E747 /* Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E89BC3567E15EF156798F100A73DC84 /* Nimble-dummy.m */; };
 		D21313F2B8BF3443B4CF02864578C13E /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A3F3667E08ECF4444E9EB398924D2B /* DSL.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -991,6 +992,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1729E078F6A4B3661D8968E7B02F444B /* psr_api_plugin-dummy.m in Sources */,
+				CD85A98724F543630035F086 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
