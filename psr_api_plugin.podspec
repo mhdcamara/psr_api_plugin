@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'psr_api_plugin/Classes/*.swift'
+  s.source_files = 'psr_api_plugin/Classes/**/*'
   
   # s.resource_bundles = {
   #   'psr_api_plugin' => ['psr_api_plugin/Assets/*.png']
