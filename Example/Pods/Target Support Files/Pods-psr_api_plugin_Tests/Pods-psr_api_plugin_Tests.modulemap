@@ -1,0 +1,6 @@
+framework module Pods_psr_api_plugin_Tests {
+  umbrella header "Pods-psr_api_plugin_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module psr_api_plugin {
+  umbrella header "psr_api_plugin-umbrella.h"
+
+  export *
+  module * { export * }
+}
