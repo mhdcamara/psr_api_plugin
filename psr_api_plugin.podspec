@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'psr_api_plugin'
   s.swift_version = "5.2.4"
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
 
   s.summary          = 'psr_api_plugin is a cocoapods that extends the UIImageView class'
 
@@ -39,9 +39,6 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-   s.frameworks = [
-      'UIKit',
-      'Foundation'
-   ] 
+   s.frameworks = 'UIKit', 'Foundation'
    s.dependency 'Alamofire', '~> 4.8.2'
 end
