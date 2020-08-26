@@ -5,15 +5,15 @@ use_frameworks!
 target 'psr_api_plugin_Example' do
   pod 'psr_api_plugin', :path => '../'
   
-  pod 'TextFieldEffects'
+#  pod 'TextFieldEffects'
   pod 'Alamofire', '~> 4.8.2'
    
   pod 'SwiftyJSON'
-  pod 'MaterialComponents/TextControls+OutlinedTextAreas'
-  pod 'MaterialComponents/TextControls+OutlinedTextFields'
-  pod 'SKCountryPicker'
-  pod 'EzPopup'
-  pod 'EasyTipView', '~> 2.0.4'
+#  pod 'MaterialComponents/TextControls+OutlinedTextAreas'
+#  pod 'MaterialComponents/TextControls+OutlinedTextFields'
+#  pod 'SKCountryPicker'
+#  pod 'EzPopup'
+#  pod 'EasyTipView', '~> 2.0.4'
 
   target 'psr_api_plugin_Tests' do
     inherit! :search_paths

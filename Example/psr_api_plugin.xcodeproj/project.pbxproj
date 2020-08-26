@@ -28,8 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16D74ABF7B94CE78C21D31A9 /* Pods-psr_api_plugin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-psr_api_plugin_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-psr_api_plugin_Example/Pods-psr_api_plugin_Example.release.xcconfig"; sourceTree = "<group>"; };
+		174A65C4F1D41645BD8DE57E /* Pods-psr_api_plugin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-psr_api_plugin_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-psr_api_plugin_Tests/Pods-psr_api_plugin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B5C374AF06C9F3C89BC6238 /* Pods_psr_api_plugin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_psr_api_plugin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3308CDECAF09F921F4EA19A9 /* Pods-psr_api_plugin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-psr_api_plugin_Tests.debug.xcconfig"; path = "Target Support Files/Pods-psr_api_plugin_Tests/Pods-psr_api_plugin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		34C3FA55731B58AD1FD6323D /* Pods-psr_api_plugin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-psr_api_plugin_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-psr_api_plugin_Example/Pods-psr_api_plugin_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4D59EB26682E6D1B3DE8CEF7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		54A7A592727C4AACD81F48A5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		55449CE787433FBD0A2F0AFF /* Pods_psr_api_plugin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_psr_api_plugin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +50,7 @@
 		8FE0F5F1B42695B7F0112E9F /* Pods-psr_api_plugin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-psr_api_plugin_Tests.release.xcconfig"; path = "Target Support Files/Pods-psr_api_plugin_Tests/Pods-psr_api_plugin_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9170D0330169AAB820D5358C /* Pods-psr_api_plugin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-psr_api_plugin_Example.debug.xcconfig"; path = "Target Support Files/Pods-psr_api_plugin_Example/Pods-psr_api_plugin_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9816A8B55B57AB1053598C4F /* Pods-psr_api_plugin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-psr_api_plugin_Example.release.xcconfig"; path = "Target Support Files/Pods-psr_api_plugin_Example/Pods-psr_api_plugin_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D70DAB33F71705DAE082B750 /* Pods-psr_api_plugin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-psr_api_plugin_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-psr_api_plugin_Tests/Pods-psr_api_plugin_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,10 @@
 				9816A8B55B57AB1053598C4F /* Pods-psr_api_plugin_Example.release.xcconfig */,
 				3308CDECAF09F921F4EA19A9 /* Pods-psr_api_plugin_Tests.debug.xcconfig */,
 				8FE0F5F1B42695B7F0112E9F /* Pods-psr_api_plugin_Tests.release.xcconfig */,
+				34C3FA55731B58AD1FD6323D /* Pods-psr_api_plugin_Example.debug.xcconfig */,
+				16D74ABF7B94CE78C21D31A9 /* Pods-psr_api_plugin_Example.release.xcconfig */,
+				174A65C4F1D41645BD8DE57E /* Pods-psr_api_plugin_Tests.debug.xcconfig */,
+				D70DAB33F71705DAE082B750 /* Pods-psr_api_plugin_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -270,15 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-psr_api_plugin_Example-checkManifestLockResult.txt",
 			);
@@ -295,25 +299,13 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-psr_api_plugin_Example/Pods-psr_api_plugin_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/EasyTipView/EasyTipView.framework",
-				"${BUILT_PRODUCTS_DIR}/EzPopup/EzPopup.framework",
-				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
-				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
-				"${BUILT_PRODUCTS_DIR}/SKCountryPicker/SKCountryPicker.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/psr_api_plugin/psr_api_plugin.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyTipView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EzPopup.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKCountryPicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/psr_api_plugin.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,15 +318,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-psr_api_plugin_Tests-checkManifestLockResult.txt",
 			);
@@ -461,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -510,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

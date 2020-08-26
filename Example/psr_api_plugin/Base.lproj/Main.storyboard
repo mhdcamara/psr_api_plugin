@@ -26,13 +26,30 @@
                                     <constraint firstAttribute="height" constant="125" id="b9N-d2-RNX"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pS-S6-erA">
+                                <rect key="frame" x="77" y="423" width="221" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="Q4e-2X-yTP"/>
+                                    <constraint firstAttribute="height" constant="30" id="V1m-aW-mIx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                <state key="normal" title="Payer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFullCustomPopupButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ymR-4Y-TrV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6pS-S6-erA" secondAttribute="bottom" constant="214" id="0BU-3g-B4x"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7Ls-80-tmQ" secondAttribute="bottom" constant="503" id="MdZ-gB-bCq"/>
                             <constraint firstItem="7Ls-80-tmQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="39" id="USZ-Cs-peK"/>
                             <constraint firstItem="7Ls-80-tmQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="108" id="VO3-1W-xfG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7Ls-80-tmQ" secondAttribute="trailing" constant="108" id="Wz6-jh-2zC"/>
+                            <constraint firstItem="6pS-S6-erA" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="eSG-TF-JYX"/>
                         </constraints>
                     </view>
                     <connections>
@@ -41,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="128.18590704647679"/>
+            <point key="canvasLocation" x="-468" y="-5"/>
         </scene>
     </scenes>
 </document>

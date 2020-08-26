@@ -1,77 +1,24 @@
 PODS:
   - Alamofire (4.8.2)
-  - EasyTipView (2.0.4)
-  - EzPopup (1.1)
-  - MaterialComponents/AnimationTiming (113.1.0)
-  - MaterialComponents/Availability (113.1.0)
-  - MaterialComponents/private/Math (113.1.0)
-  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (113.1.0)":
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/private/Math
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (113.1.0)":
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Math
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/private/TextControlsPrivate+Shared (113.1.0)":
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/private/Math
-    - "MaterialComponents/TextControls+Enums"
-  - "MaterialComponents/private/TextControlsPrivate+TextFields (113.1.0)":
-    - MaterialComponents/private/Math
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-  - "MaterialComponents/TextControls+BaseTextAreas (113.1.0)":
-    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-    - MDFInternationalization
-  - "MaterialComponents/TextControls+BaseTextFields (113.1.0)":
-    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
-    - "MaterialComponents/private/TextControlsPrivate+Shared"
-    - "MaterialComponents/private/TextControlsPrivate+TextFields"
-    - MDFInternationalization
-  - "MaterialComponents/TextControls+Enums (113.1.0)"
-  - "MaterialComponents/TextControls+OutlinedTextAreas (113.1.0)":
-    - MaterialComponents/Availability
-    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
-    - "MaterialComponents/TextControls+BaseTextAreas"
-  - "MaterialComponents/TextControls+OutlinedTextFields (113.1.0)":
-    - MaterialComponents/Availability
-    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
-    - "MaterialComponents/TextControls+BaseTextFields"
-  - MDFInternationalization (2.0.0)
   - Nimble (7.3.4)
-  - psr_api_plugin (1.0.0)
+  - psr_api_plugin (1.1.0):
+    - Alamofire (~> 4.8.2)
   - Quick (1.2.0)
-  - SKCountryPicker (1.2.9)
   - SwiftyJSON (5.0.0)
-  - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.2)
-  - EasyTipView (~> 2.0.4)
-  - EzPopup
-  - "MaterialComponents/TextControls+OutlinedTextAreas"
-  - "MaterialComponents/TextControls+OutlinedTextFields"
   - Nimble (~> 7.0)
   - psr_api_plugin (from `../`)
   - Quick (~> 1.2.0)
-  - SKCountryPicker
   - SwiftyJSON
-  - TextFieldEffects
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - EasyTipView
-    - EzPopup
-    - MaterialComponents
-    - MDFInternationalization
     - Nimble
     - Quick
-    - SKCountryPicker
     - SwiftyJSON
-    - TextFieldEffects
 
 EXTERNAL SOURCES:
   psr_api_plugin:
@@ -79,17 +26,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  EasyTipView: 4f8beae0a82db2ca4a9b5fd658785fc5f61d296b
-  EzPopup: b959cfb0d70d782a28e770a96c454df0401467c7
-  MaterialComponents: 2dd68a6e240ec31c37a4559f176b7bcfe31ef92c
-  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
-  psr_api_plugin: c6cc0ff7163c480e450caccd9219486e556d48a8
+  psr_api_plugin: c1800bcc00366b6207ce83af70fc48f89d8a5e18
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  SKCountryPicker: 7ad1e7dfb482cfb26855e33c2d70dbf1eaf218fe
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
-  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: 927720aaac624d41fa6bcf4b57fa6b74308bc104
+PODFILE CHECKSUM: 21642bf28e1331a58639e901a00ddb515fe4442f
 
 COCOAPODS: 1.9.3
