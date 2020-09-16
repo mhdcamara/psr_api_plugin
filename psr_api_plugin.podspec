@@ -32,12 +32,12 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'psr_api_plugin/Classes/**/*'
   
   s.resource_bundles = {
     # 'psr_api_plugin' => ['psr_api_plugin/Assets/*.png']
-     'psr_api_plugin' => ['Pod/Classes/*.storyboard']
-#    'psr_api_plugin' => ['psr_api_plugin/Pod/Classes/**/*.{storyboard,xib,xcassets,json,imageset,png}']
+    # 'psr_api_plugin' => ['psr_api_plugin/Classes/*.storyboard']
+    'psr_api_plugin' => ['psr_api_plugin/Classes/**/*.{storyboard,xib,xcassets,json,imageset,png}']
     
   }
 
