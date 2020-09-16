@@ -12,7 +12,7 @@ target 'psr_api_plugin_Example' do
 #  pod 'MaterialComponents/TextControls+OutlinedTextAreas'
 #  pod 'MaterialComponents/TextControls+OutlinedTextFields'
 #  pod 'SKCountryPicker'
-#  pod 'EzPopup'
+  pod 'EzPopup'
 #  pod 'EasyTipView', '~> 2.0.4'
 
   target 'psr_api_plugin_Tests' do

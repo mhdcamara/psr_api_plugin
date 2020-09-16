@@ -1,25 +1,25 @@
 //
-//  paydunyaSetup.swift
-//  PayDunya
+//  PayDunyaSetup.swift
+//  Pods
 //
-//  Created by PayDunya on 7/19/19.
-//  Copyright © 2019 PayDunya. All rights reserved.
+//  Created by Mouhamed Camara on 8/26/20.
 //
 
 import Foundation
+import UIKit
 import Alamofire
 
-class PaydunyaSetup
+public class PayDunyaSetup
 {
-    let MasterKey: String
-    let PrivateKey: String
-    let Token: String
-    let cancel_url: String
-    let return_url: String
-    let callback_url: String
+    public let MasterKey: String
+    public let PrivateKey: String
+    public let Token: String
+    public let cancel_url: String
+    public let return_url: String
+    public let callback_url: String
 
     
-    init(MasterKey: String, PrivateKey: String, Token: String, cancel_url: String, return_url: String, callback_url: String)
+    public init(MasterKey: String, PrivateKey: String, Token: String, cancel_url: String, return_url: String, callback_url: String)
     {
         self.MasterKey = MasterKey
         self.PrivateKey = PrivateKey
@@ -30,7 +30,7 @@ class PaydunyaSetup
         
     }
     
-    func Action()->[String: Any]
+    public func Action()->[String: Any]
     {
         let actions: [String: Any] = [
             "cancel_url": self.cancel_url,
@@ -41,7 +41,7 @@ class PaydunyaSetup
     }
     
     
-    func setup()->HTTPHeaders
+    public func setup()->HTTPHeaders
     {
         let Headers: HTTPHeaders = [
             "User-Agent": "paydunya-ios/v1.0",
@@ -54,7 +54,7 @@ class PaydunyaSetup
         return Headers
     }
     
-    func Channels()->[String]
+    public func Channels()->[String]
     {
         let channels: [String] = [
             "card",

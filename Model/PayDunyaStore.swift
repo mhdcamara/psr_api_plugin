@@ -1,31 +1,29 @@
 //
-//  PaydunyaStore.swift
-//  PayDunya
+//  PayDunyaStore.swift
+//  Pods
 //
-//  Created by PayDunya on 7/22/19.
-//  Copyright © 2019 PayDunya. All rights reserved.
+//  Created by Mouhamed Camara on 8/26/20.
 //
 
 import Foundation
-
+import UIKit
 import Alamofire
 
-class PaydunyaStore
+public class PayDunyaStore
 {
-    let name: String
-    let tagline: String
-    let postal_address: String
-    let phone: Int
-    let logo_url: String
-    let website_url: String
+    public var name: String
+    public var tagline: String
+    public var postal_address: String
+    public var phone: Int
+    public var logo_url: String
+    public var website_url: String
+    public var total_amount: Int = 0
+    public var description: String = ""
+    public var items: [String: Any] = [:]
+    public var taxes: [String: Any] = [:]
     
-    var total_amount: Int = 0
-    var description: String = ""
-    var items: [String: Any] = [:]
-    var taxes: [String: Any] = [:]
     
-    
-    init(name: String, tagline: String, postal_address: String, phone: Int, logo_url: String,  website_url: String)
+    public init(name: String, tagline: String, postal_address: String, phone: Int, logo_url: String,  website_url: String)
     {
         self.name = name
         self.tagline = tagline
@@ -37,7 +35,7 @@ class PaydunyaStore
     }
     
     
-    func store()->[String: Any]
+    public func store()->[String: Any]
     {
        
         let Parameters = [
@@ -54,7 +52,7 @@ class PaydunyaStore
         return Parameters["store"]!
     }
    
-    func invoices()->[String: Any]
+    public func invoices()->[String: Any]
     {
         
         let invoice = [

@@ -8,6 +8,7 @@
 
 import UIKit
 import psr_api_plugin
+import EzPopup
 import Alamofire
 import SwiftyJSON
 
@@ -19,16 +20,43 @@ class ViewController: UIViewController
     
     //MARK: Actions
     
+    let VC = PaymentViewController()
+    
     @IBAction func showFullCustomPopupButtonTapped(_ sender: Any)
     {
-        CheckoutInvoice()
+//        guard let pickerVC = VC else { return }
+                
+//        pickerVC.delegate = self
+        let pickerVC = VC.instantiate()
+        
+        let popupVC = PopupViewController(contentController: pickerVC!, position: .top(50), popupWidth: self.view.frame.width - 20, popupHeight: self.view.frame.height - 70)
+        popupVC.backgroundAlpha = 0.3
+        popupVC.backgroundColor = .black
+        popupVC.canTapOutsideToDismiss = true
+        popupVC.cornerRadius = 10
+        popupVC.shadowEnabled = true
+        present(popupVC, animated: true, completion: nil)
+//        CheckoutInvoice()
     }
+    
+    let cst = AppConstant(
+        master_key: "9iQ6hGxZ-Ln51-3TH5-rJ8w-Ywj7ofR1umMW",
+        private_key: "live_private_p2Sfz3iXvVkvQXqr8tNLBL5s5Pr",
+        token: "qkiNmADLj8fiFarnVqVd",
+        invoice_token: "",
+        cancel_url: "",
+        return_url: "",
+        callback_url: "",
+        payment_url: ""
+    )
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
         //Setp 3: - Call the circleImageView & downloadedFrom fuctions
+        
+        
         
         testImageView.circleImageView(borderColor: UIColor.white , borderWidth: 2.0)
         testImageView.downloadedFrom(link: "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg")
@@ -37,7 +65,7 @@ class ViewController: UIViewController
     
     //MARK: Private Functions
     
-    private func CheckoutInvoice()
+    func CheckoutInvoice()
     {
         /*
           *   Préparation de la requete
@@ -45,14 +73,17 @@ class ViewController: UIViewController
 
 
          // Initialisation des paramétres de la requete
-        let Store = PaydunyaStore(
-             name: "paydunyaIOS-Plugin",
-             tagline: "L'élégance c'est nous!",
-             postal_address: "11500",
-             phone: 778064927,
-             logo_url: "",
-             website_url: ""
-         )
+        let Store = PayDunyaStore(
+
+            name: "paydunyaIOS-Plugin",
+            tagline: "L'élégance c'est nous!",
+            postal_address: "11500",
+            phone: 778064927,
+            logo_url: "",
+            website_url: ""
+        )
+        
+        
 
          Store.total_amount = 200
          Store.description = "Chaussures Croco"
@@ -71,20 +102,23 @@ class ViewController: UIViewController
          ]
 
          //Initialisation des Clé d'API
-         let Setup = PaydunyaSetup(
-            MasterKey: AppConstant.master_key,
-            PrivateKey: AppConstant.private_key,
-            Token: AppConstant.token,
-            cancel_url: AppConstant.cancel_url,
-            return_url:  AppConstant.return_url,
-            callback_url: AppConstant.callback_url
+         let Setup = PayDunyaSetup(
+            MasterKey: cst.master_key,
+            PrivateKey: cst.private_key,
+            Token: cst.token,
+            cancel_url: cst.cancel_url,
+            return_url:  cst.return_url,
+            callback_url: cst.callback_url
          )
 
-         let invoice = PaydunyaInvoice()
+        let invoice = PayDunyaInvoice(
+            store: Store,
+            setup: Setup
+        )
 
          let Headers: HTTPHeaders = Setup.setup()
 
-         let Parametres: Parameters = invoice.Invoice(store: Store, setup: Setup)
+         let Parametres: Parameters = invoice.Invoice()
 
          // La requete avec Alamofire
 
@@ -105,7 +139,7 @@ class ViewController: UIViewController
 
                      let urlpaiement = json["response_text"].stringValue
 
-                     AppConstant.payment_url = urlpaiement
+                     self.cst.payment_url = urlpaiement
 
                      //On redirige l'utilisateur vers la page de paiement
 
@@ -113,8 +147,8 @@ class ViewController: UIViewController
 
                      print("Le token: \(token)")
                      print("L'url: \(urlpaiement)")
-
-                     AppConstant.invoice_token = token
+                     
+                     self.cst.invoice_token = token
 
                  case let .failure(error): print(error)
              }

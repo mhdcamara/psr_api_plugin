@@ -1,13 +1,15 @@
 PODS:
   - Alamofire (4.8.2)
+  - EzPopup (1.1)
   - Nimble (7.3.4)
-  - psr_api_plugin (1.1.0):
+  - psr_api_plugin (1.2.0):
     - Alamofire (~> 4.8.2)
   - Quick (1.2.0)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.2)
+  - EzPopup
   - Nimble (~> 7.0)
   - psr_api_plugin (from `../`)
   - Quick (~> 1.2.0)
@@ -19,6 +21,8 @@ SPEC REPOS:
     - Nimble
     - Quick
     - SwiftyJSON
+  trunk:
+    - EzPopup
 
 EXTERNAL SOURCES:
   psr_api_plugin:
@@ -26,11 +30,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  EzPopup: b959cfb0d70d782a28e770a96c454df0401467c7
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
-  psr_api_plugin: c1800bcc00366b6207ce83af70fc48f89d8a5e18
+  psr_api_plugin: 60fb808a028cc9104c768221f280ba0462c910b4
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 21642bf28e1331a58639e901a00ddb515fe4442f
+PODFILE CHECKSUM: f4cf1b845cbf100a6f1e82e8ff62443301a852e3
 
 COCOAPODS: 1.9.3
